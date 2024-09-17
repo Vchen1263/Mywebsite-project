@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="My Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="tab-button active" onclick="openTab(event, 'home')">Home</a></li>
+                <li><a href="#" class="tab-button" onclick="openTab(event, 'shop')">Shop</a></li>
+                <li><a href="#" class="tab-button" onclick="openTab(event, 'contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="tab-content active">
+            <section class="Title-section">
+                <div class="Title-image">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="image/Autocad.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/solidowkr.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/Onshape.webp" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/tinkercad.png" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons (optional) -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!-- Dots container -->
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Title-text">
+                    <h1>Welcome</h1>
+                    <p>Hello, this Website is about me and my Projects. Making a website from scratch is indeed a lot of work but the result is satisfying. I have a lot of goals but this is my first step~</p>
+                    <p>Check out the tabs! The projects include various DWG I made from various platforms, ALL FREE TO DOWNLOAD.</p>
+                </div>
+            </section>
+        </div>
+        <div id="shop" class="tab-content">
+            <div class="product-grid">
+                <a href="product-page.html?product=P1" class="product-box">
+                    <img src="image/Shuttlecock.png" alt="P1">
+                    <div class="product-info">
+                        <h3>Product Name 1</h3>
+                    </div>
+                </a>
+                <a href="product-page.html?product=P2" class="product-box">
+                    <img src="image/monkey.webp" alt="P2">
+                    <div class="product-info">
+                        <h3>Product Name 2</h3>
+                    </div>
+                </a>
+                <a href="product-page.html?product=P3" class="product-box">
+                    <img src="image/Fan.png" alt="P3">
+                    <div class="product-info">
+                        <h3>Mini Fan</h3>
+                    </div>
+                </a>
+                <a href="product-page.html?product=P4" class="product-box">
+                    <img src="image/Gear.png" alt="P4">
+                    <div class="product-info">
+                        <h3>26 tooth Gear</h3>
+                    </div>
+                </a>
+                <a href="product-page.html?product=P5" class="product-box">
+                    <div class="product-box">
+                        <div class="sketchfab-embed-wrapper" alt="P5">
+                            <iframe title="Fan assembly" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e2dd23db441c45118223a2246e3ed733/embed" style="width: 100%; height: 300px;"></iframe>
+                        </div>
+                        <div class="product-info">
+                            <h3>Hand Spin Fan</h3>
+                </a>
+                <a href="product-page.html?product=P6" class="product-box">
+                    <img src="image/" alt="P6">
+                    <div class="product-info">
+                        <h3>Train</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="contact" class="tab-content">
+            <img src="image/Contact.png" alt="Contact pic" style="width: 50%; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-left:30px; margin-top: 50px;">
+            <div class="iphone">
+                <div class="widget">
+                    <img src="image/Hachi.png" alt="Hachi Widget">
+                </div>
+                <!-- First Container -->
+                <div class="icons-container">
+                    <div class="icon" id="icon1">
+                        <img src="image/phone icon.webp" alt="Phone Icon">
+                        <div class="info-box" id="info1">
+                            <h3>Phone</h3>
+                            <p>HELLO! yeah no... private incase someone put me on spam website 😊</p>
+                        </div>
+                    </div>
+                    <div class="icon" id="icon2">
+                        <img src="image/email.webp" alt="Email Icon">
+                        <div class="info-box" id="info2">
+                            <h3>Email:</h3>
+                            <p>www.vickychen123@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="icon" id="icon3">
+                        <img src="image/linkedin.png" alt="LinkedIn Icon">
+                        <div class="info-box" id="info3">
+                            <h3>Linkedin</h3>
+                            <p><a href="https://www.linkedin.com/in/-vicky-chen/">Click here to see Linkedin</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Container -->
+                <div class="icons-container2">
+                    <div class="icon" id="icon4">
+                        <img src="image/instagram.webp" alt="Instagram Icon">
+                        <div class="info-box" id="info4">
+                            <h3>Instagram</h3>
+                            <p>owo.ovoxo</p>
+                        </div>
+                    </div>
+                    <div class="icon" id="icon5">
+                        <img src="image/discord.webp" alt="Discord Icon">
+                        <div class="info-box" id="info5">
+                            <h3>Discord</h3>
+                            <p>kuro3764</p>
+                        </div>
+                    </div>
+                    <div class="icon" id="icon6">
+                        <img src="image/notes.png" alt="Notes Icon">
+                        <div class="info-box" id="info6">
+                            <h3>Note</h3>
+                            <p>Hello! Note? uhh Thank you for checking out my website</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Container -->
+                <div class="icons-container3">
+                    <div class="icon" id="icon7">
+                        <img src="image/weather.webp" alt="Weather Icon">
+                        <div class="info-box" id="info7">
+                            <h3>Weather</h3>
+                            <p>Weather rain or shine I'll get my work done.</p>
+                        </div>
+                    </div>
+                    <div class="icon" id="icon8">
+                        <img src="image/Setting.webp" alt="Setting Icon">
+                    </div>
+                    <div class="icon" id="icon9">
+                        <img src="image/app.png" alt="Appstore Icon">
+                        <div class="info-box" id="info8">
+                            <h3>App Store</h3>
+                            <p>Wild Rift? TFT? HOK? Anyone?!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url(image/Gray\ and\ White\ Luxury\ Daniel\ Gallego\ Blog\ Banner\ \(1\).png);
+}
+
+#product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    background-image: url(image/Background.png);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+.product-left img {
+    width: 550px;  /* Set a fixed width for uniform size */
+    height: 550px; /* Set a fixed height for uniform size */
+    justify-content: center;
+    object-fit: cover;  /* Ensure the image covers the container without distortion */
+}
+
+.product-right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+}
+
+#product-name {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#product-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#download-button {
+    display: inline-block; /* Ensure it aligns correctly with the content */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    cursor: pointer; /* Change cursor to pointer for clickable */
+}
+#download-button img {
+    width: 250px;
+    height:auto;
+    border-radius: 8px;
+    display: block; /* Ensure image fills the container */
+}
+
+#download-button:hover img {
+    opacity: 0.8;
+}
