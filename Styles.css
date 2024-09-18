@@ -197,18 +197,19 @@ img {
     color: #666;
 }
 /*Shop*/
-.product-grid {
+
+#shop-page {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
+    justify-content: space-between; /* Distribute space between boxes */
 }
 
 .product-box {
-    flex: 0 0 30%; /* Adjust the width to allow three items per row */
+    flex: 1 1 calc(33.333% - 20px); /* Ensures 3 boxes per row */
     display: block;
-    width: 400px; /* Adjust the width for uniformity */
+    width:400px; /* Adjust the width for uniformity */
     height: 400px; /* Adjust the height as needed */
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -235,7 +236,7 @@ img {
     padding: 10px; /* Adjusted padding for smaller description box */
     height: 100px; /* Ensure description box has a smaller height */
     display: flex;
-    flex-direction: column;
+    flex-direction:column ;
     justify-content: center;
     align-items: center;
 }

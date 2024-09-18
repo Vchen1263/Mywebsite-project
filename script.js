@@ -1,16 +1,20 @@
 function openTab(event, tabId) {
-    // Hide all tab content
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => tab.classList.remove('active'));
+    // Hide all tab-content divs
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.style.display = 'none';
+    });
 
     // Remove 'active' class from all tab buttons
     const tabButtons = document.querySelectorAll('.tab-button');
-    tabButtons.forEach(button => button.classList.remove('active'));
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
 
-    // Show the selected tab content
-    document.getElementById(tabId).classList.add('active');
+    // Show the selected tab-content div
+    document.getElementById(tabId).style.display = 'block';
 
-    // Add 'active' class to the clicked tab button
+    // Add 'active' class to the clicked button
     event.currentTarget.classList.add('active');
 }
 document.addEventListener('DOMContentLoaded', function() {
