@@ -209,12 +209,13 @@ img {
 .product-box {
     flex: 1 1 calc(33.333% - 20px); /* Ensures 3 boxes per row */
     display: block;
-    width:400px; /* Adjust the width for uniformity */
+    max-width:400px; /* Adjust the width for uniformity */
     height: 400px; /* Adjust the height as needed */
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
+    object-fit: contain; /* Ensures the entire image is visible without being cropped */
     background-color: #fff;
     text-decoration: none; /* Remove underline from links */
     color: inherit; /* Inherit text color */

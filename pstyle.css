@@ -9,10 +9,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for the container */
+    height: 600px; /* Fixed height for the container */
     background-image: url(image/Background.png);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin: 0 auto; /* Center the container horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .product-left {
@@ -24,10 +28,17 @@ body {
 }
 
 .product-left img {
-    width: 550px;  /* Set a fixed width for uniform size */
+    max-width: 550px;  /* Set a fixed width for uniform size */
     height: 550px; /* Set a fixed height for uniform size */
     justify-content: center;
     object-fit: cover;  /* Ensure the image covers the container without distortion */
+}
+
+.product-left iframe {
+    width: 500px; /* Full width of the container */
+    height: 500px; /* Adjust height as needed */
+    object-fit: cover;
+    border: none; /* Remove iframe border */
 }
 
 .product-right {
@@ -37,7 +48,7 @@ body {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items to the left */   
 }
 
 #product-name {

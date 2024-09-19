@@ -88,4 +88,17 @@ document.addEventListener('DOMContentLoaded', function() {
             closeInfo(currentInfoBox);
         }
 });
+ // Product Sorting by `data-added`
+ const shopPage = document.getElementById('shop-page');
+ const productBoxes = Array.from(shopPage.getElementsByClassName('product-box'));
+
+ // Sort the products by the `data-added` attribute in descending order
+ productBoxes.sort((a, b) => {
+     return new Date(b.getAttribute('data-added')) - new Date(a.getAttribute('data-added'));
+ });
+
+ // Append the sorted product boxes back to the shop-page div
+ productBoxes.forEach(product => {
+     shopPage.appendChild(product);
+ });
 });
