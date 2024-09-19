@@ -20,16 +20,16 @@ const products = {
         description: 'This is the description for the 26 tooth Gear.'
     },
     'P5': {
+        name: 'Train',
+        image: 'image/Train.png',
+        description: 'This is the description for the Train.'
+    },
+    'P6': {
         name: 'Hand Spin Fan',
         image: '',
         description: 'This is the description for the Hand Spin Fan.',
         sketchfabEmbed: `<iframe title="Hand Spin Fan" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/e2dd23db441c45118223a2246e3ed733/embed" style="width: 100%; height: 500px;"></iframe>`
     },
-    'P6': {
-        name: 'Train',
-        image: 'image/Train.png',
-        description: 'This is the description for the Train.'
-    }
 };
 
 // Get product ID from URL query (e.g., ?product=P1)
