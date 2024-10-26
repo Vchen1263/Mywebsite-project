@@ -203,7 +203,7 @@ img {
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
-    justify-content: space-between; /* Distribute space between boxes */
+    justify-content: flex-start; /* Align boxes closely without extra space */
 }
 
 .product-box {

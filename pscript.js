@@ -20,18 +20,18 @@ const products = {
         description: 'Its just the case for a water heating tube.'
     },
     'P5': {
-        name: 'Train',
-        image: 'image/Train.png',
-        description: 'An assembly made so the parts are connected to move in .'
+        name: 'Hose Connector',
+        image: 'image/hoseconnector.png',
+        description: 'This is a hose connector. It for connecting two tubes or 2 end of a tube so water can flow./n But in this case, made it for my professor so he can create a giant diamond molecule.'
     },
     'P6': {
         name: 'Hand Spin Fan',
-        description: 'This is the description for the Hand Spin Fan.',
+        description: 'This Hand spin Fan is based off one of Leonardo da Vinci drawings of a fan./n it can be rotated! It assemblied that way',
         sketchfabEmbed: `<iframe title="Hand Spin Fan" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/e2dd23db441c45118223a2246e3ed733/embed"></iframe>`
     },
     'P7': {
         name: 'Robot Clipper',
-        description: 'This is the description for the Hand Spin Fan.',
+        description: 'Its a gripper made from many components assemblied togethe',
         sketchfabEmbed:'<iframe title="Robot Gripper" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/a102254a53aa4a23b922c1253f0ec248/embed"> </iframe>'
     },
     'P8': {
@@ -41,18 +41,23 @@ const products = {
     },
     'P9': {
         name: 'Jeep',
-        description: 'This is the description for the Hand Spin Fan.',
+        description: 'A Jeep,it doesnt do much but it can be a fun toy',
         sketchfabEmbed:'<iframe title="Toy Jeep" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/65b72126d9b245f4a65505f9883364b5/embed"> </iframe>'
     },
     'P10': {
         name: 'Selfie Stick',
-        description: 'This is the description for the Hand Spin Fan.',
+        description: 'A selfie Stick, might be small but maybe for a small phone :)',
         sketchfabEmbed:'<iframe title="Selfie Stick" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/77e7cf3393f643c19f98dcf5cbada453/embed"> </iframe>'
     },
     'P11': {
         name: 'Pen',
-        description: 'This is the description for the Hand Spin Fan.',
+        description: 'You know those colorful pens? Yeah it work like that',
         sketchfabEmbed:'<iframe title="Pen" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"allow="autoplay; fullscreen; xr-spatial-tracking"xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/4cd848a6eaec48a7a2327bd57bc8f2fa/embed?ui_infos=0&ui_watermark=0&ui_controls=1"</iframe>'
+    },
+    'P12': {
+        name: 'Flask Prusa i3 M3Ks+ Knob',
+        image: 'image/Flask Knob.png',
+        description: 'My professor found the orginal prusa knob was too boring, so I made this to fit his degree in Chemistry ',
     }
 }
 
